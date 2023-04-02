@@ -69,21 +69,27 @@ a {
 ._naviname .content .nameclass .secondary {
   display: flex;
   gap: 20px;
+  flex-grow: 1;
 }
 ._naviname .content .nameclass .secondary .searc {
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 ._naviname .content .nameclass .secondary .searc div {
   background-color: #dfe0e2;
+  display: flex;
+  flex-grow: 1;
 }
 ._naviname .content .nameclass .secondary .searc div input {
+  display: flex;
   background-color: #dfe0e2;
   border: none;
   outline: 0;
   margin-left: 10px;
-  width: 504px;
   padding: 8px 0px;
+  width: 100%;
+  flex-grow: 1;
 }
 ._naviname .content .nameclass .secondary .searc div i {
   margin-right: 10px;
@@ -98,6 +104,7 @@ a {
 ._naviname .content .nameclass .secondary .nav div {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 ._naviname .content .nameclass .secondary .nav div .iconic {
   display: flex;
@@ -111,19 +118,46 @@ a {
   max-width: 820px;
   padding-bottom: 24px;
 }
+._naviname .content .content {
+  display: flex;
+  flex-wrap: wrap;
+}
 ._naviname .content .content ul {
   display: flex;
   font-size: 16px;
   justify-content: space-between;
   font-weight: 400;
   color: #273142;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 768px) {
   ._naviname .content .nameclass .secondary .searc div input {
-    width: 170px;
+    background-color: red;
   }
 }
+footer .container {
+  max-width: 1127px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+footer .container p {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(33, 33, 33, 0.75);
+}
+footer .container div {
+  display: flex;
+  gap: 36px;
+  color: #212121;
+}
+
 .section_1 {
   background-color: #FFE2E0;
 }
@@ -275,6 +309,7 @@ a {
   margin: 0 auto;
   max-width: 1128px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .section_4 .container .box1, .v1 .container .box1 {
   font-family: "Rubik";
@@ -370,11 +405,6 @@ a {
   background-color: red;
 }
 
-@media only screen and (max-width: 768px) {
-  .section_5 .container, .v1 .container {
-    flex-wrap: wrap;
-  }
-}
 .section_5.v1 {
   background-color: #FFF7F7;
 }
@@ -403,6 +433,7 @@ a {
   background-color: #F7F7F9;
   align-items: center;
   padding-bottom: 32px;
+  flex-wrap: wrap;
 }
 .section_7 .container .name h2 {
   font-family: "Palanquin";
@@ -417,11 +448,15 @@ a {
   background-color: white;
   height: 40px;
   padding-right: 10px;
+  max-width: 500px;
+  flex-grow: 1;
 }
 .section_7 .container .name div input {
+  display: flex;
   border: none;
-  width: 504px;
+  width: 100%;
   font-size: 16px;
+  flex-grow: 1;
 }
 
 .section_8 {
@@ -434,6 +469,7 @@ a {
   max-width: 1128px;
   justify-content: space-between;
   padding-top: 56px;
+  flex-wrap: wrap;
 }
 .section_8 .container .contact {
   max-width: 320px;
@@ -442,6 +478,7 @@ a {
   font-weight: 400;
   line-height: 27px;
   color: rgba(33, 33, 33, 0.7490196078);
+  margin-bottom: 25px;
 }
 .section_8 .container .contact p {
   padding-bottom: 40px;
@@ -465,8 +502,9 @@ a {
 }
 .section_8 .container .sch {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 100px;
+  flex-wrap: wrap;
 }
 .section_8 .container .sch ul {
   font-weight: bold;
@@ -474,27 +512,16 @@ a {
 .section_8 .container .sch ul li {
   font-weight: lighter;
   line-height: 35px;
-  width: 122px;
+  max-width: 122px;
 }
 
-.section_9 .container {
-  max-width: 1127px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
+@media only screen and (max-width: 403px) {
+  ._naviname .content .nameclass {
+    flex-direction: column;
+  }
 }
-.section_9 .container p {
-  padding-top: 23px;
-  padding-bottom: 23px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: rgba(33, 33, 33, 0.75);
-}
-.section_9 .container div {
-  display: flex;
-  gap: 36px;
-  color: #212121;
+@media only screen and (max-width: 885px) {
+  .section_8 .container {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=main.css.map */
