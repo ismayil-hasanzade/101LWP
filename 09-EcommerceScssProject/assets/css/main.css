@@ -131,11 +131,6 @@ a {
   flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 768px) {
-  ._naviname .content .nameclass .secondary .searc div input {
-    background-color: red;
-  }
-}
 footer .container {
   max-width: 1127px;
   display: flex;
