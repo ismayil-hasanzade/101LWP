@@ -116,13 +116,13 @@ main {
 }
 .section_1 .container .content .box1 {
   background-color: #54A6FF;
-  background-image: url("../imgs/BG (1).png");
+  background-image: url("./imgs/BG (1).png");
 }
 .section_1 .container .content .box1 .button {
   background-color: #3563E9;
 }
 .section_1 .container .content .box2 {
-  background-image: url("../imgs/BG.png");
+  background-image: url("./imgs/BG.png");
   background-color: #3563E9;
 }
 .section_1 .container .content .box2 .button {
