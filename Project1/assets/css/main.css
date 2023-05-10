@@ -16,7 +16,8 @@ a {
 }
 
 header {
-  background-image: url("../../../assets/imgs/background.png");
+  background-color: #28293e;
+
   padding-top: 16px;
 }
 header .container {
