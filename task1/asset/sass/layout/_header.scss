@@ -1,0 +1,102 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+#secretmenu{
+    
+}
+
+header {
+  padding: 60px 0;
+  background-image: url("https://preview.colorlib.com/theme/villa/img/hero_1.jpg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  nav {
+    width: 100%;
+    .content {
+      color: white;
+      padding: 0px 20px;
+      font-size: 28px;
+      display: flex;
+      justify-content: space-between;
+      .navicon {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        span {
+          background-color: white;
+          width: 30px;
+          height: 2px;
+        }
+      }
+    }
+  }
+  .resort {
+    padding: 90px 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .resort_header {
+        font-weight: 900;
+        font-size: 80px;
+        max-width: 90%;
+        text-align: center;
+      }
+      p {
+        font-size: 30px;
+      }
+      .buttondiv {
+        display: flex;
+        margin-top: 50px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+
+        .box {
+          color: white;
+          padding: 10px 30px;
+          border: 1px solid;
+          border-radius: 15px;
+          border: none;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-size: 17px;
+        }
+        .explorebtn {
+          background-color: #e61c5d;
+        }
+        .downloadbtn {
+          border: 1px solid white;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    .resort {
+      .container {
+        .resort_header {
+          font-size: 40px;
+        }
+        p {
+          font-size: 18px;
+        }
+        .buttondiv {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

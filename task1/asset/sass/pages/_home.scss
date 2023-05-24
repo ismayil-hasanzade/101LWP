@@ -1,0 +1,177 @@
+main {
+  #visit {
+    padding: 70px 0px;
+    .container {
+      flex-direction: column;
+      .visit_header {
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #b3b3b3;
+        letter-spacing: 0.2em;
+        margin-bottom: 30px;
+      }
+      .carddiv {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        .cardbox {
+          width: 20%;
+          img {
+            width: 100%;
+          }
+          span {
+            font-size: 20px;
+          }
+          .raiting {
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            .stardiv {
+              font-size: 13px;
+              color: #e61c5d;
+            }
+            p {
+              color: #b3b3b3;
+            }
+          }
+        }
+      }
+    }
+  }
+  #life {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      .lifeheader {
+        font-size: 80px;
+        max-width: 55%;
+        text-align: center;
+      }
+      p {
+        max-width: 55%;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        color: #6c757d;
+      }
+      .carddiv {
+        .cardbox {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  #slider {
+    background-image: url("https://preview.colorlib.com/theme/villa/img/round.png.webp");
+    padding: 60px 0px;
+   
+    
+}
+  #blogpost {
+    padding: 60px 0px;
+    background-image: url("https://preview.colorlib.com/theme/villa/img/round.png.webp");
+    .container {
+      flex-direction: column;
+      align-items: center;
+      .lifeheader {
+        font-size: 80px;
+        max-width: 55%;
+        text-align: center;
+      }
+      p {
+        max-width: 55%;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        color: #6c757d;
+      }
+      .carddiv {
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .cardbox {
+            background-color: white;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+            rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          img {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+          .about {
+            padding: 0 20px;
+            p {
+              width: 100%;
+              font-size: 20px;
+            }
+            span {
+              font-weight: 600;
+              color: black;
+              font-size: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  main {
+    #visit {
+      .container {
+        .carddiv {
+          .cardbox {
+            width: 45%;
+          }
+        }
+      }
+    }
+    #life {
+      .container {
+        .lifeheader {
+          font-size: 40px;
+        }
+      }
+    }
+    #blogpost {
+      .container {
+        .lifeheader{
+            font-size: 40px;
+        }
+        .carddiv {
+          .cardbox {
+            width: 48%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 544px) {
+  main {
+    #visit {
+      .container {
+        .carddiv {
+          gap: 20px;
+          .cardbox {
+            width: 100%;
+          }
+        }
+      }
+    }
+    #blogpost {
+      .container {
+        .carddiv {
+          .cardbox {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

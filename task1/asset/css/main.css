@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair", serif;
+}
+
+footer {
+  padding: 50px 0px;
+  background-color: #1a1a1a;
+}
+footer .container {
+  color: rgba(255, 255, 255, 0.5);
+  justify-content: space-between;
+}
+footer .container .smedia {
+  display: flex;
+  gap: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+  }
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+
+header {
+  padding: 60px 0;
+  background-image: url("https://preview.colorlib.com/theme/villa/img/hero_1.jpg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+header nav {
+  width: 100%;
+}
+header nav .content {
+  color: white;
+  padding: 0px 20px;
+  font-size: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .content .navicon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+header nav .content .navicon span {
+  background-color: white;
+  width: 30px;
+  height: 2px;
+}
+header .resort {
+  padding: 90px 0;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+header .resort .container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .resort .container .resort_header {
+  font-weight: 900;
+  font-size: 80px;
+  max-width: 90%;
+  text-align: center;
+}
+header .resort .container p {
+  font-size: 30px;
+}
+header .resort .container .buttondiv {
+  display: flex;
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+header .resort .container .buttondiv .box {
+  color: white;
+  padding: 10px 30px;
+  border: 1px solid;
+  border-radius: 15px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 17px;
+}
+header .resort .container .buttondiv .explorebtn {
+  background-color: #e61c5d;
+}
+header .resort .container .buttondiv .downloadbtn {
+  border: 1px solid white;
+}
+
+@media only screen and (max-width: 768px) {
+  header .resort .container .resort_header {
+    font-size: 40px;
+  }
+  header .resort .container p {
+    font-size: 18px;
+  }
+  header .resort .container .buttondiv {
+    flex-direction: column;
+  }
+}
+main #visit {
+  padding: 70px 0px;
+}
+main #visit .container {
+  flex-direction: column;
+}
+main #visit .container .visit_header {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  letter-spacing: 0.2em;
+  margin-bottom: 30px;
+}
+main #visit .container .carddiv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+main #visit .container .carddiv .cardbox {
+  width: 20%;
+}
+main #visit .container .carddiv .cardbox img {
+  width: 100%;
+}
+main #visit .container .carddiv .cardbox span {
+  font-size: 20px;
+}
+main #visit .container .carddiv .cardbox .raiting {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+main #visit .container .carddiv .cardbox .raiting .stardiv {
+  font-size: 13px;
+  color: #e61c5d;
+}
+main #visit .container .carddiv .cardbox .raiting p {
+  color: #b3b3b3;
+}
+main #life .container {
+  flex-direction: column;
+  align-items: center;
+}
+main #life .container .lifeheader {
+  font-size: 80px;
+  max-width: 55%;
+  text-align: center;
+}
+main #life .container p {
+  max-width: 55%;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+}
+main #life .container .carddiv .cardbox {
+  flex-direction: column;
+}
+main #slider {
+  background-image: url("https://preview.colorlib.com/theme/villa/img/round.png.webp");
+  padding: 60px 0px;
+}
+main #blogpost {
+  padding: 60px 0px;
+  background-image: url("https://preview.colorlib.com/theme/villa/img/round.png.webp");
+}
+main #blogpost .container {
+  flex-direction: column;
+  align-items: center;
+}
+main #blogpost .container .lifeheader {
+  font-size: 80px;
+  max-width: 55%;
+  text-align: center;
+}
+main #blogpost .container p {
+  max-width: 55%;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+}
+main #blogpost .container .carddiv {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main #blogpost .container .carddiv .cardbox {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+main #blogpost .container .carddiv .cardbox img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+main #blogpost .container .carddiv .cardbox .about {
+  padding: 0 20px;
+}
+main #blogpost .container .carddiv .cardbox .about p {
+  width: 100%;
+  font-size: 20px;
+}
+main #blogpost .container .carddiv .cardbox .about span {
+  font-weight: 600;
+  color: black;
+  font-size: 26px;
+}
+
+@media only screen and (max-width: 768px) {
+  main #visit .container .carddiv .cardbox {
+    width: 45%;
+  }
+  main #life .container .lifeheader {
+    font-size: 40px;
+  }
+  main #blogpost .container .lifeheader {
+    font-size: 40px;
+  }
+  main #blogpost .container .carddiv .cardbox {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 544px) {
+  main #visit .container .carddiv {
+    gap: 20px;
+  }
+  main #visit .container .carddiv .cardbox {
+    width: 100%;
+  }
+  main #blogpost .container .carddiv .cardbox {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
