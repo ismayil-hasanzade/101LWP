@@ -16,13 +16,29 @@ header {
   background-repeat: no-repeat;
 
   nav {
+    position: relative;
+    .usersimage {
+      display: flex;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      z-index: 1;
+      right: 15px;
+      bottom: -15px;
+      i{
+        font-size: 25px;
+      }
+    }
     .search {
       background-color: black;
       position: absolute;
       width: 100%;
       top: 0;
       height: 100px;
-      z-index: 1;
+      z-index: 999;
 
       display: none;
       padding: 10px 30px;
@@ -89,6 +105,7 @@ header {
             }
             .magnitfy {
               &:hover {
+                cursor: pointer;
                 color: black;
                 transform: scale(0.7, 1);
               }
@@ -102,9 +119,9 @@ header {
             font-size: 11px;
             align-items: center;
             position: relative;
-            .basket {
+            .basketbtn {
               color: #c19a83;
-              font-size: 20px;
+              font-size: 20px !important;
               transition: 400ms;
               cursor: pointer;
             }
@@ -184,6 +201,9 @@ header {
               i {
                 color: #c19a83;
                 font-size: 18px;
+                &:hover {
+                  cursor: pointer;
+                }
               }
               p {
                 position: absolute;
@@ -191,8 +211,8 @@ header {
                 right: 5px;
                 border-radius: 50%;
                 background-color: #c19a83;
-                width: 15px;
-                height: 15px;
+                width: 17px;
+                height: 17px;
                 display: grid;
                 place-items: center;
                 font-size: 11px;
@@ -264,7 +284,7 @@ header {
       position: absolute;
       right: -100%;
       top: 0;
-      
+
       flex-direction: column;
       cursor: default;
       width: 30%;
@@ -295,7 +315,7 @@ header {
         height: 75%;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
+
         overflow-y: auto;
         .productbox {
           border-bottom: 1px solid rgba(0, 0, 0, 0.56);
@@ -330,7 +350,7 @@ header {
                   padding: 7px 15px;
                   border: 1px solid rgba(0, 0, 0, 0.07);
                   transition: 400ms;
-                  &:hover{
+                  &:hover {
                     cursor: pointer;
                     background-color: #c19a83;
                   }
@@ -338,7 +358,7 @@ header {
                 .productnumber {
                   background-color: white;
                   border: none;
-                  &:hover{
+                  &:hover {
                     cursor: default;
                     background-color: white;
                   }
@@ -394,7 +414,7 @@ header {
           padding: 15px 0;
           text-transform: uppercase;
           transition: 400ms;
-          &:hover{
+          &:hover {
             cursor: pointer;
             background-color: #c19a83;
           }
@@ -426,6 +446,21 @@ header {
             display: block;
           }
         }
+      }
+    }
+    .shopping_cart {
+      .shoppingmenu {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  header {
+    .shopping_cart {
+      .shoppingmenu {
+        width: 70%;
       }
     }
   }

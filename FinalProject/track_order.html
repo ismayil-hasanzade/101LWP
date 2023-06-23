@@ -15,6 +15,9 @@
   </head>
   <body>
     <header id="header">
+      <div class="usersimage">
+        <i class="fa-solid fa-circle-user"></i>
+      </div>
       <nav id="nav">
         <div class="search">
           <input type="text" placeholder="Search..." />
@@ -37,7 +40,7 @@
                 </a>
                 <a href="./decor.html"> <li>Decor</li> </a
                 ><a href="./office.html"> <li>Office</li> </a
-                ><a href="./living_room.html"> <li>Living room</li> </a
+                ><a href="./livingroom.html"> <li>Living room</li> </a
                 ><a href="./bedroom.html">
                   <li>Bedroom</li>
                 </a>
@@ -54,8 +57,8 @@
                 <li>
                   <a href="contact.html">Contact</a>
                 </li>
-                <li>
-                  <a style="color: #d2b4a3" href="track_order.html"
+                <li class="trackorder">
+                  <a href="track_order.html" style="color: #c19a83"
                     >Track Order</a
                   >
                 </li>
@@ -66,10 +69,8 @@
                   <a href="login.html">Log in</a>
                 </li>
                 <li class="basketli">
-                  <a href=""
-                    ><i class="fa-solid basket fa-basket-shopping"></i>
-                  </a>
-                  <p>3</p>
+                  <i class="fa-solid basketbtn fa-basket-shopping"></i>
+                  <p>0</p>
                 </li>
               </ul>
             </div>
@@ -85,7 +86,7 @@
               </a>
               <a href="./decor.html"> <li>Decor</li> </a
               ><a href="./office.html"> <li>Office</li> </a
-              ><a href="./living_room.html"> <li>Living room</li> </a
+              ><a href="./livingroom.html"> <li>Living room</li> </a
               ><a href="./bedroom.html">
                 <li>Bedroom</li>
               </a>
@@ -102,8 +103,10 @@
               <li>
                 <a href="contact.html">Contact</a>
               </li>
-              <li>
-                <a href="track_order.html">Track Order</a>
+              <li class="trackorder">
+                <a href="track_order.html" style="color: #c19a83"
+                  >Track Order</a
+                >
               </li>
               <li>
                 <a href="help.html">Help</a>
@@ -113,44 +116,117 @@
               </li>
               <li class="basketli">
                 <div>
-                  <a href=""
-                    ><i class="fa-solid basket fa-basket-shopping"></i>
-                  </a>
-                  <p>3</p>
+                  <i class="fa-solid basketbtn fa-basket-shopping"></i>
+
+                  <p>0</p>
                 </div>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <div class="shopping_cart">
+        <div class="back"></div>
+        <div class="shoppingmenu">
+          <div class="shoppingmenu_header">
+            <p>Shopping Cart</p>
+            <i class="fa-solid shoppingbtn fa-xmark"></i>
+          </div>
+          <div class="shopping_content"></div>
+          <div class="totalsum">
+            <span>Subtotal:</span>
+            <p>$3,919.00</p>
+          </div>
+          <div class="shoppingbuttons">
+            <div class="viewcart">viewcart</div>
+            <div class="checkout">checkout</div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <section id="login">
+      <section id="posting">
         <div class="container">
-          <div class="account">
-            <h3>My Account</h3>
-          </div>
-          <div class="login">
-            <form action="">
-              <h2>Login</h2>
-              <div class="user">
-                <p>Username or email address<sup>*</sup></p>
-                <input type="text" placeholder="Username or email address *" />
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+            <div class="colors">
+              <label for="">Color</label>
+              <div>
+                <p>black</p>
+                <input type="radio" name="color" />
               </div>
-              <div class="password">
-                <p>Password<sup>*</sup></p>
-                <input type="password" placeholder="Password *">
-                <i class="fa-regular fa-eye"></i>
+              <div>
+                <p>bronze</p>
+                <input type="radio" name="color" />
               </div>
-              
-              <div class="remember">
-                <div class="check" id="check"></div>
-                <span>Remember me</span>
+              <div>
+                <p>gold</p>
+                <input type="radio" name="color" />
               </div>
-              <input type="button" class="loginbtn" value="Log in">
-              <a href="">Lost your password?</a>
-            </form>
-          </div>
+            </div>
+            <label for="minprice">Minprice</label>
+            <input type="number" id="minprice" />
+            <label for="minprice">Maxnprice</label>
+            <input type="number" id="maxprice" />
+            <label for="blackmax">Blackmax</label>
+            <input type="number" id="blackmax" />
+            <label for="bronzemax">Bronzemax</label>
+            <input type="number" id="bronzemax" />
+            <label for="goldmax">Goldmax</label>
+            <input type="number" id="goldmax" />
+            <div class="categorya">
+              <p>CategoryA</p>
+              <div>
+                <p>Decor</p>
+                <input type="radio" name="categorya" />
+              </div>
+              <div>
+                <p>Office</p>
+                <input type="radio" name="categorya" />
+              </div>
+              <div>
+                <p>Living Room</p>
+                <input type="radio" name="categorya" />
+              </div>
+              <div>
+                <p>Bedroom</p>
+                <input type="radio" name="categorya" />
+              </div>
+            </div>
+            <div class="categoryb">
+              <p>CategoryB</p>
+              <div>
+                <p>Decor</p>
+                <input type="radio" name="categoryb" />
+              </div>
+              <div>
+                <p>Office</p>
+                <input type="radio" name="categoryb" />
+              </div>
+              <div>
+                <p>Living Room</p>
+                <input type="radio" name="categoryb" />
+              </div>
+              <div>
+                <p>Bedroom</p>
+                <input type="radio" name="categoryb" />
+              </div>
+            </div>
+            <label for="stock">Stock</label>
+            <input type="number" id="stock" />
+            <label for="imgs">Image</label>
+            <input type="text" id="imgs" />
+            <label for="min_imgs">Min Image</label>
+            <input type="text" id="min_imgs" />
+            <label for="blackimage">Black image</label>
+            <input type="text" id="blackimage" />
+            <label for="bronzeimage">Bronze Image</label>
+            <input type="text" id="bronzeimage" />
+            <label for="goldimage">Gold Image</label>
+            <input type="text" id="goldimage" />
+            <input type="button" value="Post" id="post" />
+          </form>
         </div>
       </section>
     </main>
@@ -167,7 +243,7 @@
             <li>Links</li>
             <li>Story</li>
             <li>Contact</li>
-            <li>Track Order</li>
+            <li class="trackorder">Track Order</li>
             <li>Help</li>
           </ul>
           <ul>

@@ -1,0 +1,32 @@
+main {
+  #Table {
+
+    table,
+    tr,
+    td {
+      
+      padding: 5px;
+      
+      
+      overflow: hidden;
+      img{
+        width: 50%;
+      }
+    }
+    table {
+      width: 100%;
+      tr,td{
+        border-bottom:1px solid black ;
+        border-right:1px solid black ;
+
+      }
+      thead {
+        tr {
+          td {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

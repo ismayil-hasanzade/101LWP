@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="./asset/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <section id="Table">
+        <header id="header">
+          <nav id="nav">
+            <div class="usersimage">
+              <i class="fa-solid fa-circle-user"></i>
+            </div>
+            <div class="search">
+              <input type="text" placeholder="Search..." />
+              <i class="fa-solid fa-xmark searchIcon"></i>
+            </div>
+            <div class="container">
+              <div class="menu">
+                <div class="logo">
+                  <a href="./index.html">
+                    <img
+                      src="https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/logo-regular.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="categorynav">
+                  <ul>
+                    <a href="./shop.html">
+                      <li>SHOP ALL</li>
+                    </a>
+                    <a href="./decor.html"> <li>Decor</li> </a
+                    ><a href="./office.html"> <li>Office</li> </a
+                    ><a href="./livingroom.html"> <li>Living room</li> </a
+                    ><a href="./bedroom.html">
+                      <li>Bedroom</li>
+                    </a>
+                    <li class="magnitfy">
+                      <i class="fa-solid searchbutton fa-magnifying-glass"></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pagenav">
+                  <ul>
+                    <li>
+                      <a href="story.html">Story</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="trackorder">
+                      <a href="track_order.html">Track Order</a>
+                    </li>
+                    <li>
+                      <a href="help.html">Help</a>
+                    </li>
+                    <li class="login">
+                      <a href="login.html" style="color: #c19a83">Log in</a>
+                    </li>
+                    <li class="basketli">
+                      <i class="fa-solid basketbtn fa-basket-shopping"></i>
+                      <p>0</p>
+                    </li>
+                  </ul>
+                </div>
+                <i class="fa-solid fa-bars barsicon"></i>
+                <i class="fa-solid fa-xmark pageNavIcon"></i>
+              </div>
+            </div>
+            <div class="secretmenu">
+              <div class="categorynav">
+                <ul>
+                  <a href="./shop.html">
+                    <li>SHOP ALL</li>
+                  </a>
+                  <a href="./decor.html"> <li>Decor</li> </a
+                  ><a href="./office.html"> <li>Office</li> </a
+                  ><a href="./livingroom.html"> <li>Living room</li> </a
+                  ><a href="./bedroom.html">
+                    <li>Bedroom</li>
+                  </a>
+                  <li class="magnitfy">
+                    <i class="fa-solid searchbutton fa-magnifying-glass"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="pagenav">
+                <ul>
+                  <li>
+                    <a href="story.html">Story</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>
+                  <li class="trackorder">
+                    <a href="track_order.html">Track Order</a>
+                  </li>
+                  <li>
+                    <a href="help.html">Help</a>
+                  </li>
+                  <li class="login">
+                    <a href="login.html" style="color: #c19a83">Log in</a>
+                  </li>
+                  <li class="basketli">
+                    <div>
+                      <i class="fa-solid basketbtn fa-basket-shopping"></i>
+
+                      <p>0</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="shopping_cart">
+            <div class="back"></div>
+            <div class="shoppingmenu">
+              <div class="shoppingmenu_header">
+                <p>Shopping Cart</p>
+                <i class="fa-solid shoppingbtn fa-xmark"></i>
+              </div>
+              <div class="shopping_content"></div>
+              <div class="totalsum">
+                <span>Subtotal:</span>
+                <p>$3,919.00</p>
+              </div>
+              <div class="shoppingbuttons">
+                <div class="viewcart">viewcart</div>
+                <div class="checkout">checkout</div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <table>
+          <thead>
+            <tr>
+              <td>#</td>
+              <td>Name</td>
+              <td>Category A</td>
+              <td>Category B</td>
+
+              <td>Color</td>
+              <td>Min price</td>
+              <td>Max pric</td>
+              <td>Black max</td>
+              <td>Gold max</td>
+              <td>Bronze max</td>
+              <td>Image</td>
+              <td>Min Image</td>
+              <td>Black Image</td>
+              <td>Gold Image</td>
+              <td>Bronze Image</td>
+              <td>Remove Btn</td>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+              <td>
+                1
+                <input type="text" />
+                <button>edit</button>
+                <button>ok</button>
+              </td>
+              <td>Name</td>
+              <td>Color</td>
+              <td>Min price</td>
+              <td>Max pric</td>
+              <td>Black max</td>
+              <td>Gold max</td>
+              <td>Bronze max</td>
+              <td>Image</td>
+              <td>Min Image</td>
+              <td>Black Image</td>
+              <td>Gold Image</td>
+              <td>Bronze Image</td>
+              <td>
+                <button>X</button>
+                <input type="text" name="" id="">
+                <button>OK</button>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="./asset/script/admin.js"></script>
+  </body>
+</html>
